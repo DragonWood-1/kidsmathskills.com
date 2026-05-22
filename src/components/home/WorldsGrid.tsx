@@ -66,7 +66,7 @@ export default function WorldsGrid() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-black text-gray-900 mb-3">Choose Your World! 🌍</h2>
-          <p className="text-gray-600 text-lg">6 epic math worlds + AI tutor, each with unique adventures and rewards</p>
+          <p className="text-gray-600 text-lg">6 epic math worlds + AI tutor + visual canvas, each with unique adventures and rewards</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -112,6 +112,24 @@ export default function WorldsGrid() {
                 <h3 className="text-2xl font-black mb-2">Quick Practice</h3>
                 <p className="text-white/85 text-sm mb-4">Jump straight into timed drills. Great for building speed and fluency!</p>
                 <div className="bg-white/20 rounded-full px-4 py-2 text-sm font-bold">All grades →</div>
+              </div>
+            </Link>
+          </motion.div>
+
+          {/* DrawMath card */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.7 }}
+            className="world-card"
+          >
+            <Link href="/drawmath" className="block h-full">
+              <div className="bg-gradient-to-br from-violet-500 to-indigo-600 p-8 text-white h-full flex flex-col items-center justify-center text-center">
+                <span className="text-5xl mb-4">🎨</span>
+                <h3 className="text-2xl font-black mb-2">DrawMath</h3>
+                <p className="text-white/85 text-sm mb-4">Draw fractions, shapes, and number lines on a visual math canvas!</p>
+                <div className="bg-white/20 rounded-full px-4 py-2 text-sm font-bold">Start drawing →</div>
               </div>
             </Link>
           </motion.div>

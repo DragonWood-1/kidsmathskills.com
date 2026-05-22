@@ -31,6 +31,7 @@ export default function Nav() {
           <Link href="/tiny-tables" className="hover:text-yellow-300 transition-colors">⚡ TinyTables</Link>
           <Link href="/practice/multiplication" className="hover:text-yellow-300 transition-colors">✏️ Practice</Link>
           <Link href="/mathbuddy" className="hover:text-yellow-300 transition-colors">🤖 MathBuddy</Link>
+          <Link href="/drawmath" className="hover:text-yellow-300 transition-colors">🎨 DrawMath</Link>
           <Link href="/worksheets" className="hover:text-yellow-300 transition-colors">📄 Worksheets</Link>
           <Link href="/dashboard" className="hover:text-yellow-300 transition-colors">📊 Dashboard</Link>
         </div>
@@ -65,6 +66,7 @@ export default function Nav() {
           <Link href="/tiny-tables" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">⚡ TinyTables</Link>
           <Link href="/practice/multiplication" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">✏️ Practice</Link>
           <Link href="/mathbuddy" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">🤖 MathBuddy AI</Link>
+          <Link href="/drawmath" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">🎨 DrawMath</Link>
           <Link href="/worksheets" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">📄 Worksheets</Link>
           <Link href="/dashboard" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">📊 Parent Dashboard</Link>
         </div>

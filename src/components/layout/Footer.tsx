@@ -41,6 +41,7 @@ export default function Footer() {
             <li><Link href="/worksheets" className="hover:text-yellow-400 transition-colors">📄 Free Worksheets</Link></li>
             <li><Link href="/dashboard" className="hover:text-yellow-400 transition-colors">📊 Parent Dashboard</Link></li>
             <li><Link href="/mathbuddy" className="hover:text-yellow-400 transition-colors">🤖 MathBuddy AI Tutor</Link></li>
+            <li><Link href="/drawmath" className="hover:text-yellow-400 transition-colors">🎨 DrawMath Canvas</Link></li>
             <li><Link href="/practice/multiplication" className="hover:text-yellow-400 transition-colors">Multiplication Games</Link></li>
             <li><Link href="/practice/fractions" className="hover:text-yellow-400 transition-colors">Fractions for Kids</Link></li>
           </ul>
