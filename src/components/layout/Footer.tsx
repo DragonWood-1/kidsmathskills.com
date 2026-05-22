@@ -38,6 +38,7 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-bold mb-3">Popular Topics</h4>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/daily" className="hover:text-yellow-400 transition-colors">🌅 Daily Challenge</Link></li>
             <li><Link href="/worksheets" className="hover:text-yellow-400 transition-colors">📄 Free Worksheets</Link></li>
             <li><Link href="/dashboard" className="hover:text-yellow-400 transition-colors">📊 Parent Dashboard</Link></li>
             <li><Link href="/mathbuddy" className="hover:text-yellow-400 transition-colors">🤖 MathBuddy AI Tutor</Link></li>

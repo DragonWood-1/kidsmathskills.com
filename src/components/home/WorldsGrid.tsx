@@ -98,6 +98,24 @@ export default function WorldsGrid() {
             </motion.div>
           ))}
 
+          {/* Daily Challenge card */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.65 }}
+            className="world-card"
+          >
+            <Link href="/daily" className="block h-full">
+              <div className="bg-gradient-to-br from-amber-500 to-orange-500 p-8 text-white h-full flex flex-col items-center justify-center text-center">
+                <span className="text-5xl mb-4">🌅</span>
+                <h3 className="text-2xl font-black mb-2">Daily Challenge</h3>
+                <p className="text-white/85 text-sm mb-4">5 fresh problems every day. Build your streak and earn bonus rewards!</p>
+                <div className="bg-white/20 rounded-full px-4 py-2 text-sm font-bold">Today&apos;s challenge →</div>
+              </div>
+            </Link>
+          </motion.div>
+
           {/* Bonus card — Quick Practice */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
