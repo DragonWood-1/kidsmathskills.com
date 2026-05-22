@@ -281,7 +281,7 @@ export default function RhythmMode({ table, onBack }: Props) {
             transition={{ duration: 0.15 }}
             className="bg-white rounded-3xl p-7 text-center shadow-2xl mb-5"
           >
-            <p className="text-5xl font-black text-gray-900">{problem.a} × {problem.b} = ?</p>
+            <p className="text-3xl sm:text-5xl font-black text-gray-900">{problem.a} × {problem.b} = ?</p>
           </motion.div>
         </AnimatePresence>
 
@@ -292,7 +292,7 @@ export default function RhythmMode({ table, onBack }: Props) {
               key={`${opt}-${i}`}
               whileTap={{ scale: 0.93 }}
               onClick={() => handleAnswer(opt)}
-              className="bg-white text-gray-900 font-black text-3xl rounded-2xl py-5 shadow-lg hover:shadow-xl relative"
+              className="bg-white text-gray-900 font-black text-xl sm:text-3xl rounded-2xl py-4 sm:py-5 shadow-lg hover:shadow-xl relative"
             >
               <span className="absolute top-1 left-2 text-xs text-gray-300">{i + 1}</span>
               {opt}

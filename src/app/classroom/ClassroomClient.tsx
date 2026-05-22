@@ -318,7 +318,7 @@ export default function ClassroomClient() {
               <div className="text-center mb-8">
                 <p className="text-indigo-200 font-semibold mb-2">Share this code with your class:</p>
                 <div className="bg-white rounded-3xl py-6 px-8 inline-block shadow-2xl">
-                  <p className="text-7xl font-black tracking-widest text-indigo-700 select-all">{session.code}</p>
+                  <p className="text-5xl sm:text-7xl font-black tracking-widest text-indigo-700 select-all break-all">{session.code}</p>
                 </div>
                 <p className="text-indigo-300 text-sm mt-3">Students go to <span className="font-bold text-white">KidsMathSkills.com/classroom</span> and enter this code</p>
               </div>

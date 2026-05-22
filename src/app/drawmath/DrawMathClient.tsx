@@ -524,7 +524,7 @@ export default function DrawMathClient() {
             {textPos && (
               <div className="absolute inset-0 flex items-center justify-center bg-black/20 z-10"
                 onClick={(e) => { if (e.target === e.currentTarget) commitText(); }}>
-                <div className="bg-white rounded-2xl shadow-xl p-5 flex flex-col gap-3 min-w-64">
+                <div className="bg-white rounded-2xl shadow-xl p-5 flex flex-col gap-3 w-[90vw] max-w-sm">
                   <p className="font-black text-gray-700">Type your math text:</p>
                   <input autoFocus value={textInput} onChange={(e) => setTextInput(e.target.value)}
                     onKeyDown={(e) => e.key === "Enter" && commitText()}

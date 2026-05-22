@@ -173,12 +173,12 @@ export default function MathBuddyClient() {
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-purple-50">
       {/* Header */}
       <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-4 shadow-lg">
-        <div className="max-w-3xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Link href="/" className="text-white/80 hover:text-white text-sm font-semibold transition-colors">
-              ← Home
+        <div className="max-w-3xl mx-auto flex items-center justify-between gap-2 flex-wrap">
+          <div className="flex items-center gap-2 min-w-0">
+            <Link href="/" className="text-white/80 hover:text-white text-sm font-semibold transition-colors shrink-0">
+              ←
             </Link>
-            <div className="w-px h-5 bg-white/30" />
+            <div className="w-px h-5 bg-white/30 shrink-0" />
             <motion.div
               animate={{ scale: buddyMood === "happy" ? [1, 1.2, 1] : 1 }}
               transition={{ duration: 0.4 }}

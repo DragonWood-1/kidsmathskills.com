@@ -26,7 +26,7 @@ export default function Nav() {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-6 text-sm font-semibold">
+        <div className="hidden lg:flex items-center gap-4 text-sm font-semibold">
           <Link href="/worlds/number-quest" className="hover:text-yellow-300 transition-colors">🗺️ Worlds</Link>
           <Link href="/daily" className="hover:text-yellow-300 transition-colors">🌅 Daily</Link>
           <Link href="/tiny-tables" className="hover:text-yellow-300 transition-colors">⚡ TinyTables</Link>
@@ -49,7 +49,7 @@ export default function Nav() {
           </div>
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-1"
+            className="lg:hidden p-1"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Menu"
           >
@@ -62,7 +62,7 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-purple-700 px-4 py-3 flex flex-col gap-3 text-sm font-semibold">
+        <div className="lg:hidden bg-purple-700 px-4 py-3 flex flex-col gap-3 text-sm font-semibold">
           <Link href="/worlds/number-quest" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">🗺️ Math Worlds</Link>
           <Link href="/daily" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">🌅 Daily Challenge</Link>
           <Link href="/classroom" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">🏫 Classroom Mode</Link>

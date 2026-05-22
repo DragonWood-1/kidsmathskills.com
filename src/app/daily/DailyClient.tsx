@@ -261,7 +261,7 @@ export default function DailyClient() {
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50">
       {/* Header */}
       <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-4 py-4 shadow-lg">
-        <div className="max-w-3xl mx-auto flex items-center justify-between flex-wrap gap-2">
+        <div className="max-w-3xl mx-auto flex items-center justify-between gap-2 flex-wrap">
           <div className="flex items-center gap-3">
             <Link href="/" className="text-white/80 hover:text-white text-sm font-semibold">← Home</Link>
             <div className="w-px h-5 bg-white/30" />
@@ -272,13 +272,13 @@ export default function DailyClient() {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <div className="bg-white/20 rounded-xl px-3 py-2 text-center">
+            <div className="bg-white/20 rounded-xl px-3 py-1.5 text-center">
               <p className="text-xs text-amber-100">🔥 Streak</p>
-              <p className="font-black text-2xl leading-none">{streak}</p>
+              <p className="font-black text-xl leading-none">{streak}</p>
             </div>
-            <div className="bg-white/20 rounded-xl px-3 py-2 text-center">
+            <div className="bg-white/20 rounded-xl px-3 py-1.5 text-center hidden sm:block">
               <p className="text-xs text-amber-100">Next challenge</p>
-              <p className="font-black text-lg leading-none tabular-nums">{countdown}</p>
+              <p className="font-black text-base leading-none tabular-nums">{countdown}</p>
             </div>
           </div>
         </div>
@@ -446,7 +446,7 @@ export default function DailyClient() {
               {/* Calendar */}
               <div className="bg-white rounded-3xl shadow-sm border border-amber-100 p-5 mb-6">
                 <h3 className="font-black text-gray-700 mb-3">📅 Last 30 Days</h3>
-                <div className="grid grid-cols-10 gap-1.5">
+                <div className="grid grid-cols-7 sm:grid-cols-10 gap-1">
                   {last30.map((d) => {
                     const rec = records.find((r) => r.date === d);
                     const isToday = d === today;

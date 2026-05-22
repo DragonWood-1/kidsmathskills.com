@@ -15,7 +15,7 @@ const floatingEmojis = [
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 text-white py-24 px-4">
+    <section className="relative overflow-hidden bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 text-white py-14 sm:py-24 px-4">
       {/* Floating decorations */}
       {floatingEmojis.map((item, i) => (
         <motion.span
@@ -40,12 +40,12 @@ export default function HeroSection() {
             <span>10,000+ kids learning math every day!</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-black mb-4 sm:mb-6 leading-tight">
             Math is an
             <span className="block text-yellow-300 drop-shadow-lg">Adventure! 🚀</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-xl md:text-2xl text-white/90 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed">
             Travel through magical worlds, earn rewards, and master math —
             all while having the time of your life!
           </p>
@@ -54,7 +54,7 @@ export default function HeroSection() {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 href="/worlds/number-quest"
-                className="inline-block bg-yellow-400 text-yellow-900 font-black text-xl px-10 py-5 rounded-2xl shadow-lg hover:bg-yellow-300 transition-colors"
+                className="inline-block bg-yellow-400 text-yellow-900 font-black text-base sm:text-xl px-6 sm:px-10 py-4 sm:py-5 rounded-2xl shadow-lg hover:bg-yellow-300 transition-colors"
               >
                 🗺️ Start Your Quest!
               </Link>
@@ -62,7 +62,7 @@ export default function HeroSection() {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 href="/practice/multiplication"
-                className="inline-block bg-white/20 backdrop-blur text-white font-black text-xl px-10 py-5 rounded-2xl border-2 border-white/30 hover:bg-white/30 transition-colors"
+                className="inline-block bg-white/20 backdrop-blur text-white font-black text-base sm:text-xl px-6 sm:px-10 py-4 sm:py-5 rounded-2xl border-2 border-white/30 hover:bg-white/30 transition-colors"
               >
                 ✏️ Quick Practice
               </Link>
@@ -70,7 +70,7 @@ export default function HeroSection() {
           </div>
 
           {/* Stats */}
-          <div className="flex flex-wrap justify-center gap-8 text-center">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-8 text-center">
             {[
               { value: "5", label: "Math Worlds" },
               { value: "1,000+", label: "Problems" },

@@ -159,15 +159,15 @@ export default function GameSession({ type, title, emoji, color, world }: GameSe
       <RewardPopup show={showReward} correct={lastCorrect} streak={streak} />
 
       {/* Header */}
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
         <div className="flex items-center gap-2">
-          <span className="text-3xl">{emoji}</span>
+          <span className="text-2xl sm:text-3xl">{emoji}</span>
           <div>
-            <p className="font-black text-gray-800">{title}</p>
-            <p className="text-xs text-gray-500">Level {difficulty} • Problem {index + 1}/{problems.length}</p>
+            <p className="font-black text-gray-800 text-sm sm:text-base">{title}</p>
+            <p className="text-xs text-gray-500">Lv.{difficulty} · {index + 1}/{problems.length}</p>
           </div>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           <span className="bg-orange-100 text-orange-700 font-bold rounded-full px-3 py-1 text-sm">
             🔥 {streak}
           </span>

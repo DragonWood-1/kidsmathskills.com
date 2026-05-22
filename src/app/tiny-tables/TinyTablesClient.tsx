@@ -86,8 +86,8 @@ export default function TinyTablesClient() {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
-            <h1 className="text-6xl font-black mb-2 drop-shadow-lg">⚡ TinyTables</h1>
-            <p className="text-xl text-yellow-100">Master your multiplication tables!</p>
+            <h1 className="text-4xl sm:text-6xl font-black mb-2 drop-shadow-lg">⚡ TinyTables</h1>
+            <p className="text-base sm:text-xl text-yellow-100">Master your multiplication tables!</p>
           </motion.div>
 
           {/* Times table selector */}
@@ -147,7 +147,7 @@ export default function TinyTablesClient() {
           <h3 className="font-black text-xl mb-4 text-center">
             {selectedTable}× Table Preview
           </h3>
-          <div className="grid grid-cols-4 md:grid-cols-6 gap-2">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">
             {Array.from({ length: 12 }, (_, i) => i + 1).map(n => (
               <div key={n} className="bg-white/20 rounded-xl p-2 text-center text-sm">
                 <p className="text-yellow-200 text-xs">{selectedTable}×{n}</p>

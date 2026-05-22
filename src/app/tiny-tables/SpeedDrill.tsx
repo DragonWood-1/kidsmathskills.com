@@ -189,12 +189,12 @@ export default function SpeedDrill({ table, onBack }: Props) {
           >
             {countdown > 0 ? (
               <>
-                <p className="text-[10rem] leading-none drop-shadow-2xl">{countdown}</p>
+                <p className="text-[5rem] sm:text-[8rem] md:text-[10rem] leading-none drop-shadow-2xl">{countdown}</p>
                 <p className="text-2xl mt-2">Get ready!</p>
               </>
             ) : (
               <>
-                <p className="text-[6rem] leading-none drop-shadow-2xl">GO!</p>
+                <p className="text-[3.5rem] sm:text-[5rem] md:text-[6rem] leading-none drop-shadow-2xl">GO!</p>
                 <p className="text-2xl mt-2">⚡</p>
               </>
             )}
@@ -285,7 +285,7 @@ export default function SpeedDrill({ table, onBack }: Props) {
             <p className="text-xs opacity-80">correct</p>
           </div>
           <div className="text-center">
-            <p className={`text-5xl font-black drop-shadow-lg ${timeLeft <= 10 ? "text-red-200 animate-pulse" : ""}`}>
+            <p className={`text-4xl sm:text-5xl font-black drop-shadow-lg ${timeLeft <= 10 ? "text-red-200 animate-pulse" : ""}`}>
               {timeLeft}
             </p>
             <p className="text-xs opacity-80">seconds</p>
@@ -316,8 +316,8 @@ export default function SpeedDrill({ table, onBack }: Props) {
             className="bg-white rounded-3xl p-8 text-center shadow-2xl mb-6"
           >
             <p className="text-gray-400 text-sm mb-1 font-semibold">{table}× table</p>
-            <p className="text-6xl font-black text-gray-900">{problem.a} × {problem.b}</p>
-            <p className="text-4xl font-black text-gray-300 mt-2">= ?</p>
+            <p className="text-4xl sm:text-6xl font-black text-gray-900">{problem.a} × {problem.b}</p>
+            <p className="text-2xl sm:text-4xl font-black text-gray-300 mt-2">= ?</p>
           </motion.div>
         </AnimatePresence>
 
@@ -329,7 +329,7 @@ export default function SpeedDrill({ table, onBack }: Props) {
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.94 }}
               onClick={() => handleAnswer(opt)}
-              className="bg-white text-gray-900 font-black text-3xl rounded-2xl py-5 shadow-lg hover:shadow-xl transition-shadow relative"
+              className="bg-white text-gray-900 font-black text-xl sm:text-3xl rounded-2xl py-4 sm:py-5 shadow-lg hover:shadow-xl transition-shadow relative"
             >
               <span className="absolute top-1 left-2 text-xs text-gray-300 font-normal">{i + 1}</span>
               {opt}

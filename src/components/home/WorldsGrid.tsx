@@ -79,7 +79,7 @@ export default function WorldsGrid() {
               transition={{ delay: i * 0.1 }}
             >
               <Link href={world.href} className="block world-card">
-                <div className={`bg-gradient-to-br ${world.bg} p-8 text-white h-full`}>
+                <div className={`bg-gradient-to-br ${world.bg} p-5 sm:p-8 text-white h-full`}>
                   <div className="flex items-start justify-between mb-4">
                     <span className="text-5xl">{world.emoji}</span>
                     <div className="flex flex-col items-end gap-1">

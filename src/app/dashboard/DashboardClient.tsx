@@ -56,7 +56,7 @@ export default function DashboardClient() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-gradient-to-br from-purple-600 to-indigo-700 text-white rounded-3xl p-8 mb-6 shadow-xl"
+          className="bg-gradient-to-br from-purple-600 to-indigo-700 text-white rounded-3xl p-5 sm:p-8 mb-6 shadow-xl"
         >
           {editName ? (
             <div className="mb-4">
@@ -85,11 +85,11 @@ export default function DashboardClient() {
               </div>
             </div>
           ) : (
-            <div className="flex items-start justify-between mb-6">
-              <div className="flex items-center gap-4">
-                <div className="text-6xl">{stats.avatar}</div>
+            <div className="flex items-start justify-between mb-4 flex-wrap gap-3">
+              <div className="flex items-center gap-3">
+                <div className="text-5xl sm:text-6xl">{stats.avatar}</div>
                 <div>
-                  <h2 className="text-3xl font-black">{stats.name}</h2>
+                  <h2 className="text-2xl sm:text-3xl font-black">{stats.name}</h2>
                   <p className="text-white/70">Level {stats.level} Math Hero</p>
                 </div>
               </div>
@@ -117,21 +117,21 @@ export default function DashboardClient() {
           </div>
 
           {/* Quick stats */}
-          <div className="grid grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
             <div className="bg-white/15 rounded-2xl p-3 text-center">
-              <p className="text-2xl font-black text-yellow-300">🪙 {stats.coins}</p>
+              <p className="text-lg sm:text-2xl font-black text-yellow-300">🪙 {stats.coins}</p>
               <p className="text-xs opacity-70">Coins</p>
             </div>
             <div className="bg-white/15 rounded-2xl p-3 text-center">
-              <p className="text-2xl font-black text-orange-300">🔥 {stats.streak}</p>
+              <p className="text-lg sm:text-2xl font-black text-orange-300">🔥 {stats.streak}</p>
               <p className="text-xs opacity-70">Streak</p>
             </div>
             <div className="bg-white/15 rounded-2xl p-3 text-center">
-              <p className="text-2xl font-black text-green-300">✅ {stats.totalCorrect}</p>
+              <p className="text-lg sm:text-2xl font-black text-green-300">✅ {stats.totalCorrect}</p>
               <p className="text-xs opacity-70">Correct</p>
             </div>
             <div className="bg-white/15 rounded-2xl p-3 text-center">
-              <p className="text-2xl font-black text-blue-300">📊 {accuracy}%</p>
+              <p className="text-lg sm:text-2xl font-black text-blue-300">📊 {accuracy}%</p>
               <p className="text-xs opacity-70">Accuracy</p>
             </div>
           </div>

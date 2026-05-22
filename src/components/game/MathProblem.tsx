@@ -40,9 +40,9 @@ export default function MathProblem({ problem, onAnswer, showHint = true }: Math
         key={problem.question}
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-gradient-to-br from-indigo-500 to-purple-600 text-white rounded-3xl p-8 text-center mb-6 shadow-xl"
+        className="bg-gradient-to-br from-indigo-500 to-purple-600 text-white rounded-3xl p-5 sm:p-8 text-center mb-4 sm:mb-6 shadow-xl"
       >
-        <p className="text-4xl md:text-5xl font-black tracking-tight">{problem.question}</p>
+        <p className="text-2xl sm:text-4xl md:text-5xl font-black tracking-tight">{problem.question}</p>
       </motion.div>
 
       {/* Options grid */}
@@ -53,7 +53,7 @@ export default function MathProblem({ problem, onAnswer, showHint = true }: Math
             whileHover={selected === null ? { scale: 1.03 } : {}}
             whileTap={selected === null ? { scale: 0.97 } : {}}
             onClick={() => handleSelect(opt)}
-            className={`relative font-black text-3xl rounded-2xl p-5 text-center cursor-pointer transition-all duration-200 border-4 ${getOptionStyle(opt)}`}
+            className={`relative font-black text-xl sm:text-3xl rounded-2xl p-3 sm:p-5 text-center cursor-pointer transition-all duration-200 border-4 ${getOptionStyle(opt)}`}
           >
             {opt}
             {selected !== null && opt === problem.answer && (
