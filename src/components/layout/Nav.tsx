@@ -30,9 +30,9 @@ export default function Nav() {
           <Link href="/worlds/number-quest" className="hover:text-yellow-300 transition-colors">🗺️ Worlds</Link>
           <Link href="/daily" className="hover:text-yellow-300 transition-colors">🌅 Daily</Link>
           <Link href="/tiny-tables" className="hover:text-yellow-300 transition-colors">⚡ TinyTables</Link>
+          <Link href="/classroom" className="hover:text-yellow-300 transition-colors">🏫 Classroom</Link>
           <Link href="/practice/multiplication" className="hover:text-yellow-300 transition-colors">✏️ Practice</Link>
           <Link href="/mathbuddy" className="hover:text-yellow-300 transition-colors">🤖 MathBuddy</Link>
-          <Link href="/drawmath" className="hover:text-yellow-300 transition-colors">🎨 DrawMath</Link>
           <Link href="/worksheets" className="hover:text-yellow-300 transition-colors">📄 Worksheets</Link>
           <Link href="/dashboard" className="hover:text-yellow-300 transition-colors">📊 Dashboard</Link>
         </div>
@@ -65,6 +65,7 @@ export default function Nav() {
         <div className="md:hidden bg-purple-700 px-4 py-3 flex flex-col gap-3 text-sm font-semibold">
           <Link href="/worlds/number-quest" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">🗺️ Math Worlds</Link>
           <Link href="/daily" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">🌅 Daily Challenge</Link>
+          <Link href="/classroom" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">🏫 Classroom Mode</Link>
           <Link href="/tiny-tables" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">⚡ TinyTables</Link>
           <Link href="/practice/multiplication" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">✏️ Practice</Link>
           <Link href="/mathbuddy" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">🤖 MathBuddy AI</Link>

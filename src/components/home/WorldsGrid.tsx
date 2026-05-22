@@ -98,6 +98,24 @@ export default function WorldsGrid() {
             </motion.div>
           ))}
 
+          {/* Classroom card */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.62 }}
+            className="world-card"
+          >
+            <Link href="/classroom" className="block h-full">
+              <div className="bg-gradient-to-br from-indigo-500 to-purple-700 p-8 text-white h-full flex flex-col items-center justify-center text-center">
+                <span className="text-5xl mb-4">🏫</span>
+                <h3 className="text-2xl font-black mb-2">Classroom Mode</h3>
+                <p className="text-white/85 text-sm mb-4">Teachers: create a room &amp; race your whole class on a live leaderboard!</p>
+                <div className="bg-white/20 rounded-full px-4 py-2 text-sm font-bold">Start a game →</div>
+              </div>
+            </Link>
+          </motion.div>
+
           {/* Daily Challenge card */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
