@@ -49,6 +49,15 @@ const worlds = [
     tag: "Mystery",
     grade: "1–4",
   },
+  {
+    href: "/tiny-tables",
+    emoji: "⚡",
+    title: "TinyTables",
+    desc: "Master times tables with speed drills, rhythm mode, leaderboards, and certificates!",
+    bg: "from-yellow-400 to-orange-500",
+    tag: "Mastery",
+    grade: "2–5",
+  },
 ];
 
 export default function WorldsGrid() {

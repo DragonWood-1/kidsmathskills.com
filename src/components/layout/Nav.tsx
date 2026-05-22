@@ -28,6 +28,7 @@ export default function Nav() {
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-6 text-sm font-semibold">
           <Link href="/worlds/number-quest" className="hover:text-yellow-300 transition-colors">🗺️ Worlds</Link>
+          <Link href="/tiny-tables" className="hover:text-yellow-300 transition-colors">⚡ TinyTables</Link>
           <Link href="/practice/multiplication" className="hover:text-yellow-300 transition-colors">✏️ Practice</Link>
           <Link href="/worksheets" className="hover:text-yellow-300 transition-colors">📄 Worksheets</Link>
           <Link href="/dashboard" className="hover:text-yellow-300 transition-colors">📊 Dashboard</Link>
@@ -60,6 +61,7 @@ export default function Nav() {
       {menuOpen && (
         <div className="md:hidden bg-purple-700 px-4 py-3 flex flex-col gap-3 text-sm font-semibold">
           <Link href="/worlds/number-quest" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">🗺️ Math Worlds</Link>
+          <Link href="/tiny-tables" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">⚡ TinyTables</Link>
           <Link href="/practice/multiplication" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">✏️ Practice</Link>
           <Link href="/worksheets" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">📄 Worksheets</Link>
           <Link href="/dashboard" onClick={() => setMenuOpen(false)} className="hover:text-yellow-300">📊 Parent Dashboard</Link>

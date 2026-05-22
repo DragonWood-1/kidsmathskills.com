@@ -21,6 +21,7 @@ export default function Footer() {
             <li><Link href="/worlds/rocket-math" className="hover:text-yellow-400 transition-colors">🚀 Rocket Math</Link></li>
             <li><Link href="/worlds/math-kingdom" className="hover:text-yellow-400 transition-colors">🏰 Math Kingdom</Link></li>
             <li><Link href="/worlds/treasure-math" className="hover:text-yellow-400 transition-colors">🏴‍☠️ Treasure Math</Link></li>
+            <li><Link href="/tiny-tables" className="hover:text-yellow-400 transition-colors">⚡ TinyTables</Link></li>
           </ul>
         </div>
 
